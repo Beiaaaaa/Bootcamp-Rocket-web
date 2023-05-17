@@ -1,0 +1,395 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+    /*outline: 1px solid #000;*/
+}
+@media (min-width: 1400px) {
+    .navbar-expand-xxl .navbar-nav .nav-link {
+      padding: unset;
+    }
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 10s linear infinite alternate;
+  }   
+.header{
+    font-family: 'Josefin Sans', 'Noto Sans TC';
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header ul{
+    display: flex;
+    background-color: #fff;
+}
+.header li{
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+    padding: 12px 16px;
+}
+.header .nav-item a{
+    color: #363636;
+}
+.section-1{
+    height: 757px;
+    background-image: url('banner.svg');
+    background-size: cover;
+    background-position: center;
+}
+.section-1 h1{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #363636;
+}
+.section-1 p{
+    margin-top: 30px;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #9A9A9A;
+    margin-bottom: 24px;
+}
+.section-1 .block-1-info img{
+    margin-bottom: 16px;
+}
+.section-1 .block-1-info ul {
+    margin-bottom: 24px;
+}
+.section-1 .block-1-info li{
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 175%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #363636;
+}
+.section-1 .X{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #363636;
+    width: 0%;
+}
+.block-1{
+    width: 440px;
+    padding-top: 91px;
+}
+.block-1-info{
+    background-color: #fff;
+    border: 2px solid #E0E0E0;
+    border-radius: 24px;
+    height: 448px;
+    width: 440px;
+    text-align: center;
+    margin-top: -36px;
+}
+.col-xxl-4{
+    padding: 0;
+}
+.section-2{
+    background: #EEE6FF;;
+    border-radius: 40px;
+    padding: 60px 0px;
+}
+.section-2-info h5{
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+}
+.section-2-info h1{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+    margin-bottom: 40px;
+}
+.section-2-info p{
+    font-family: 'Noto Sans TC';
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+    width: 494px;
+}
+.section-2-info{
+    display: flex;
+}
+.section-2-info span{
+    font-weight: 900;
+}
+.map{
+    width: 636px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 16px;
+    margin-right: 96px;
+}
+iframe{
+    margin: 12px;
+    border-radius: 16px;
+}
+.section-3 h2{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #363636;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.instruction-pic{
+    border: 2px solid #CDCDCD;
+    border-radius: 16px;
+    padding: 6px 0px 0px 6px;
+    width: 526px;
+    height: 388px;
+    margin-right: 40px;
+}
+.section-3 h4{
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+    background-color: #FFD887;
+    display: inline;
+}
+.section-3 h5{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+    margin-bottom: 20px;
+}
+.instruction-block p{
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #757575;
+    width: 494px;
+}
+.section-3 span{
+    font-weight: 700;
+}
+.instruction-block{
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+.icon .ic-text-1{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+    margin-top: 24px;
+}
+.icon .ic-text-2{
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-top: 8px;
+}
+.icon-block{
+    text-align: center;
+    width: 340px;
+    height: 227px;
+}
+.slider {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  
+  .slide {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    margin-right: 24px;
+  }
+.section-4{
+    background: #EEE6FF;
+}
+.limit-price{
+    background-image: url(/火箭隊\ landing\ page/promotion-lg.svg);
+    width: 386px;
+    height: 69px;
+    margin-top: 60px;
+    margin-left: 75px;
+}
+.limit-price p{
+    padding: 16px 0px 0px 8px;
+}
+.limit-price .normal{
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+}
+.limit-price .normal span{
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+}
+.section-4 h2{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+    margin-top: 12px;
+}
+.section-4 .body2{
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+    margin-top: 8px;
+}
+.section-4 .body2 span{
+    font-weight: 700;
+}
+.section-4 .block1{
+    width: 526px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 36px 80px 48px 80px;
+    margin-top: 36px;
+}
+.section-4 .block1 .body1{
+    font-family: 'Noto Sans TC';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-4 .block1 .lg{
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #363636;
+}
+.section-4 .block1 .lg-block{
+    background: #F0F0F0;
+    padding: 36px;
+}
+
+.section-4 .block1 li{
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+    margin-top: 16px;
+}
+.section-4 .block1 span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer p{
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #363636;
+    text-align: center;
+    padding: 36px 0px;
+}
