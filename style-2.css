@@ -143,6 +143,15 @@ table {
 .col-xxl-4{
     padding: 0;
 }
+.experience li,a{
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0.02em;
+    color: #363636;
+    list-style-type: disc;
+}
+
 .section-2{
     background: #EEE6FF;;
     border-radius: 40px;
