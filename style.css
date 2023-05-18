@@ -71,6 +71,7 @@ table {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10000;
 }
 .header ul{
     display: flex;
@@ -290,7 +291,7 @@ table {
 }
 .content-info{
     background-color: #FFFFFF;
-    background-image: url(/火箭隊\ landing\ page/bg.svg);
+    background-image: url(./火箭隊\ landing\ page/bg.svg);
     border: 2px solid #F0F0F0;
     border-radius: 16px;
     padding: 64px 80px 40px 48px;
@@ -347,6 +348,14 @@ table {
 .backend-engineer, .uidesigner{
     margin-top: 48px;
 }
+.image-button {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .image-button:hover img {
+    content: url('./火箭隊\ landing\ page/Go-State=hover.svg');
+  }
 .allcard{
     height: 592px;
     overflow-y: scroll;    

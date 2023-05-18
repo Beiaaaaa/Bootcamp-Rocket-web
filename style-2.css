@@ -71,6 +71,7 @@ table {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10000;
 }
 .header ul{
     display: flex;
@@ -383,6 +384,14 @@ iframe{
     display: inline-block;
     vertical-align: middle;
 }
+.image-button {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .image-button:hover img {
+    content: url('./火箭隊\ landing\ page/Form-State=hover.svg');
+  }
 .footer p{
     font-family: 'Josefin Sans';
     font-weight: 400;
@@ -393,3 +402,6 @@ iframe{
     text-align: center;
     padding: 36px 0px;
 }
+body {
+    overflow-x: hidden;
+  }
